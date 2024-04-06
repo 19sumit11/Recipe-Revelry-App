@@ -53,10 +53,69 @@ form button[type="submit"]:hover{
   background-color: rgb(150, 112, 139);
  }
 
+ /* main section */
  .recipe-container {
   text-align: center;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap:40px;
+  width:80%;
+  margin: 10px auto;
+  padding: 20px;
+  place-items: center;
  }
+
+/* STYLE AFTER WE SEARCH IN SEARCH BOX ,STYLING FOR IMAGES WHICH WE MAKE IN THE FORM OF CARD {THIS IS THE RECIPE WE MAKE IN JAVASCRIPT}*/
+
+.recipe {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+  cursor: pointer;
+  max-width: 350px;
+
+}
+
+/* GIVING IMG HEIGHT */
+.recipe img {
+  height: 300px;
+}
+
+.recipe h3 {
+  font-size: 24px;
+  margin-block: 5px;
+}
+
+.recipe p {
+  font-size: 20px;
+  color: #4a4a4a;
+  margin: 5px;
+}
+
+.recipe span {
+  font-weight: 600;
+}
+
+.recipe button{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 18px auto;
+  
+  background-color: rgb(139, 97, 137);
+
+  color: white;
+
+}
+.recipe button:hover{
+  background-color: rgb(189, 95, 186);
+}
 
 
 
