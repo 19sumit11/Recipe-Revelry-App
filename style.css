@@ -77,7 +77,12 @@ form button[type="submit"]:hover{
   box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
   cursor: pointer;
   max-width: 350px;
+  transition: transform 0.3s ease-in-out;
 
+}
+
+.recipe:hover {
+  transform: scale(1.02);
 }
 
 /* GIVING IMG HEIGHT */
@@ -118,6 +123,59 @@ form button[type="submit"]:hover{
 }
 
 
+/* RECIPE DETAILS */
+.recipe-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
+  background-color: rgb(104, 108, 108);
+  border-radius: 12px;
+  width: 40%;
+  height: 60%;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
+}
+
+.recipe-details-content {
+  padding: 30px;
+}
+
+.recipeName{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.ingredientList{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.recipeInstructions{
+  line-height: 30px;
+  white-space: pre-line;   
+  margin-bottom: 20px; 
+}
+
+.recipe-close-btn{
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(147, 84, 144);
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.recipe-close-btn:hover{
+  background-color: rgb(106, 6, 103);
+}
 
 
 @media screen and (max-width:600px) {
@@ -127,6 +185,7 @@ form button[type="submit"]:hover{
   header nav form {
     width: 80%;
     margin-top: 20px;
+   
   }
   
 }
